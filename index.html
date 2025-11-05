@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('travel.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .intro {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 80px; /* to avoid overlap with fixed navbar */
+        }
+        .social-icons img {
+            width: 40px;
+            margin: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+
+        <input type="text" id="searchInput" placeholder="Search recommendations..." />
+  <button id="searchBtn">Search</button>
+  <button id="clear-button">Clear</button>
+    </nav>
+
+    <section id="results">
+        <!-- Recommendations will appear here -->
+      </section>
+
+    <div class="intro">
+        <h1>Welcome to Our Travel Recommendation Website</h1>
+        <p>Discover amazing places to visit based on your interests. Explore beaches, temples, and countries with our personalized recommendations.</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+      </div>
+      <script src="travel_recommendation.js"></script>
+</body>
+</html>
